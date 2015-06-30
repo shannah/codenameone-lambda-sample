@@ -10,7 +10,7 @@ This project demostrates Codename One support for lambdas.  It is a simple hello
 
 === Prerequisites
 
-The `lib/CLDC11.jar` file needs to be patched to include 4 class stubs from the `java.lang.invoke` package.  link:CLDCExtensions/src/java/lang/invoke[see here for source].  This project contains a subprojects (link:CLDCExtensions[CLDCExtensions]) that includes these stubs.  It's build script will automatically patch the `lib/CLDC11.jar` of this project.  I.e. You can patch as follows:
+The `lib/CLDC11.jar` file needs to be patched to include 4 class stubs from the `java.lang.invoke` package.  link:CLDCExtensions/src/java/lang/invoke[see here for source].  This project contains a subproject (link:CLDCExtensions[CLDCExtensions]) that includes these stubs.  It's build script will automatically patch the `lib/CLDC11.jar` of this project.  I.e. You can patch as follows:
 
 ----
 $ cd CLDCExtensions
