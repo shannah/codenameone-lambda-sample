@@ -1,6 +1,6 @@
 = Codename One Lambdas Sample
 
-This project demostrates Codename One support for lambdas.  It is a simple hello world application with the following modificates:
+This project demostrates Codename One support for lambdas.  It is a simple hello world application with the following modifications:
 
 * All references to `source` and `target` `1.5` in the build.xml and properties files have been changed to `1.8`.
 * It includes a build hint `java.version=8`.
