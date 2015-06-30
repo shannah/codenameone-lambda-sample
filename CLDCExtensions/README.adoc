@@ -1,0 +1,11 @@
+= CLDC Lambda Extensions
+
+This project includes stubs for classes necessary to build Codename One apps against CLDC11 for Codename One.
+
+== Build Instructions
+
+----
+ant jar
+----
+
+This will compile the stubs and copy them into the `CLDC11.jar` file in the parent project's `lib` directory.
