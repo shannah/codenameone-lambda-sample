@@ -1,0 +1,22 @@
+= Codename One Lambdas Sample
+
+This project demostrates Codename One support for lambdas.  It is a simple hello world application with the following modificates:
+
+* All references to `source` and `target` `1.5` in the build.xml and properties files have been changed to `1.8`.
+* It includes a build hint `java.version=8`.
+* The `lib/CLDC11.jar` file has been patched to include some additional class stubs that are necessary to build with lambda support.
+
+== Build Instructions
+
+=== Prerequisites
+
+The `lib/CLDC11.jar` file needs to be patched to include 4 class stubs from the `java.lang.invoke` package.  link:CLDCExtensions/src/java/lang/invoke[see here for source].  This project contains a subprojects (CLDCExtensions) that includes these stubs.  It's build script will automatically patch the `lib/CLDC11.jar` of this project.  I.e. You can patch as follows:
+
+----
+$ cd CLDCExtensions
+$ ant jar
+----
+
+=== Building & Running
+
+If the CLDC11.jar file is patched, then you should be able to run the project normally or send builds to any build target. 
